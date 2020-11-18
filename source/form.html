@@ -9,7 +9,7 @@
 
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип городка Седона">
+        <img class="logo__image" src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип городка Седона">
       </a>
       <nav class="navigation">
         <button class="navigation__toggle" type="button">
@@ -45,21 +45,21 @@
       </div>
       <section>
         <h2 class="visually-hidden">Форма отзыва о Седоне</h2>
-        <form class="review-form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="review-form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="review-form__introduce">
             <legend class="review-form__title">Представьтесь:</legend>
             <ul class="introduce__list">
               <li class="introduce__item">
                 <label class="introduce__title" for="name">Имя*:</label>
-                <input class="introduce__input" type="text" name="name" id="name" value="Петр" required>
+                <input class="introduce__input" type="text" name="name" id="name" placeholder="Петр" required>
               </li>
               <li class="introduce__item">
                 <label class="introduce__title" for="surname">Фамилия*:</label>
-                <input class="introduce__input" type="text" name="surname" id="surname" value="Иванов" required>
+                <input class="introduce__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
               </li>
               <li class="introduce__item">
                 <label class="introduce__title" for="patronymic">Отчество:</label>
-                <input class="introduce__input" type="text" name="patronymic" id="patronymic" value="Александрович">
+                <input class="introduce__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -68,11 +68,11 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <label class="contacts__title" for="phone">Контактный телефон*:</label>
-                <input class="contacts__input" type="tel" name="phone" id="phone" value="Введите телефон" required>
+                <input class="contacts__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
               </li>
               <li class="contacts__item">
                 <label class="contacts__title" for="email">Электронная почта*:</label>
-                <input class="contacts__input" type="email" name="email" id="email" value="Введите e-mail" required>
+                <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
@@ -97,19 +97,19 @@
             <legend class="review-form__title">Посещенные достопримечательности:</legend>
             <ul class="attractions__list">
               <li class="attractions__item">
-                <input class="attractions__input" type="checkbox" name="attractions" id="diablo-bridge" checked>
+                <input class="attractions__input" type="checkbox" name="attractions" id="diablo-bridge" value="diablo-bridge" checked>
                 <label class="attractions__title" for="diablo-bridge">Мост Дьявола</label>
               </li>
               <li class="attractions__item">
-                <input class="attractions__input" type="checkbox" name="attractions" id="mountain-bell" checked>
+                <input class="attractions__input" type="checkbox" name="attractions" id="mountain-bell" value="mountain-bell" checked>
                 <label class="attractions__title" for="mountain-bell">Гора-Колокол</label>
               </li>
               <li class="attractions__item">
-                <input class="attractions__input" type="checkbox" name="attractions" id="slide-park" checked>
+                <input class="attractions__input" type="checkbox" name="attractions" id="slide-park" value="slide-park" checked>
                 <label class="attractions__title" for="slide-park">Слайд-парк</label>
               </li>
               <li class="attractions__item">
-                <input class="attractions__input" type="checkbox" name="attractions" id="red-rocks">
+                <input class="attractions__input" type="checkbox" name="attractions" id="red-rocks" value="red-rocks">
                 <label class="attractions__title" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
@@ -118,7 +118,7 @@
             <legend class="review-form__title">Опишите свои эмоции:</legend>
             <textarea class="emotions__text" cols="20" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="review-form__button" type="submit" value="Отправить отзыв">Отправить отзыв</button>
+          <button class="review-form__button" type="submit">Отправить отзыв</button>
           <p class="review-form__legend">*-Обязательные поля</p>
         </form>
       </section>
