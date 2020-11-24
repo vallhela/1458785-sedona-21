@@ -36,12 +36,12 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Ваши впечатления о Седоне</h1>
-      <div class="attractor-form">
-        <div class="attractor-form__poster">
+      <div class="attractor">
+        <div class="attractor__poster">
           <img src="https://via.placeholder.com/230x40" width="230" height="40" alt="Седона">
         </div>
-        <p class="attractor-form__title">Оставьте свой отзыв</p>
-        <p class="attractor-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="attractor__title">Оставьте свой отзыв</p>
+        <p class="attractor__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <section>
         <h2 class="visually-hidden">Форма отзыва о Седоне</h2>
@@ -51,15 +51,15 @@
             <ul class="introduce__list">
               <li class="introduce__item">
                 <label class="introduce__title" for="name">Имя*:</label>
-                <input class="introduce__input" type="text" name="name" id="name" placeholder="Петр" required>
+                <input class="introduce__input" type="text" name="name" id="name" placeholder="Петр" value="Петр" required>
               </li>
               <li class="introduce__item">
                 <label class="introduce__title" for="surname">Фамилия*:</label>
-                <input class="introduce__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+                <input class="introduce__input" type="text" name="surname" id="surname" placeholder="Иванов" value="Иванов" required>
               </li>
               <li class="introduce__item">
                 <label class="introduce__title" for="patronymic">Отчество:</label>
-                <input class="introduce__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+                <input class="introduce__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович" value="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -68,11 +68,11 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <label class="contacts__title" for="phone">Контактный телефон*:</label>
-                <input class="contacts__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+                <input class="contacts__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" value="+0(123)456-78-90" required>
               </li>
               <li class="contacts__item">
                 <label class="contacts__title" for="email">Электронная почта*:</label>
-                <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите e-mail" value="mymail@mymail.com" required>
               </li>
             </ul>
           </fieldset>
@@ -80,15 +80,15 @@
             <legend class="review-form__title">Ваше общее впечатление:</legend>
             <ul class="impression__list">
               <li class="impression__item">
-                <input class="impression_input" type="radio" name="impression" id="like" checked>
+                <input class="impression_input" type="radio" name="impression" id="like" value="like" checked>
                 <label class="impression_title" for="like">Скорее положительное</label>
               </li>
               <li class="impression__item">
-                <input class="impression_input" type="radio" name="impression" id="dislike">
+                <input class="impression_input" type="radio" name="impression" id="dislike" value="dislike">
                 <label class="impression_title" for="dislike">Скорее отрицательное</label>
               </li>
               <li class="impression__item">
-                <input class="impression_input" type="radio" name="impression" id="hesitating">
+                <input class="impression_input" type="radio" name="impression" id="hesitating" value="hesitating">
                 <label class="impression_title" for="hesitating">Затрудняюсь ответить</label>
               </li>
             </ul>
