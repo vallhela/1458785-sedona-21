@@ -40,7 +40,7 @@
       <h1 class="visually-hidden">Ваши впечатления о Седоне</h1>
       <div class="attractor">
         <div class="attractor__poster">
-          <img src="https://via.placeholder.com/230x40" width="230" height="40" alt="Седона">
+          <img src="./img/form-text-mobile.svg" width="230" height="40" alt="Седона">
         </div>
         <p class="attractor__title">Оставьте свой отзыв</p>
         <p class="attractor__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -48,7 +48,7 @@
       <section>
         <h2 class="visually-hidden">Форма отзыва о Седоне</h2>
         <form class="review-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="review-form__introduce">
+          <fieldset class="review-form__introduce introduce">
             <legend class="review-form__title">Представьтесь:</legend>
             <ul class="introduce__list">
               <li class="introduce__item">
@@ -65,7 +65,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__contacts">
+          <fieldset class="review-form__contacts contacts">
             <legend class="review-form__title">Контактная информация:</legend>
             <ul class="contacts__list">
               <li class="contacts__item">
@@ -78,24 +78,24 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__impression">
+          <fieldset class="review-form__impression impression">
             <legend class="review-form__title">Ваше общее впечатление:</legend>
             <ul class="impression__list">
               <li class="impression__item">
-                <input class="impression_input" type="radio" name="impression" id="like" value="like" checked>
-                <label class="impression_title" for="like">Скорее положительное</label>
+                <input class="impression__input" type="radio" name="impression" id="like" value="like" checked>
+                <label class="impression__title" for="like">Скорее положительное</label>
               </li>
               <li class="impression__item">
-                <input class="impression_input" type="radio" name="impression" id="dislike" value="dislike">
-                <label class="impression_title" for="dislike">Скорее отрицательное</label>
+                <input class="impression__input" type="radio" name="impression" id="dislike" value="dislike">
+                <label class="impression__title" for="dislike">Скорее отрицательное</label>
               </li>
               <li class="impression__item">
-                <input class="impression_input" type="radio" name="impression" id="hesitating" value="hesitating">
-                <label class="impression_title" for="hesitating">Затрудняюсь ответить</label>
+                <input class="impression__input" type="radio" name="impression" id="hesitating" value="hesitating">
+                <label class="impression__title" for="hesitating">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__attractions">
+          <fieldset class="review-form__attractions attractions">
             <legend class="review-form__title">Посещенные достопримечательности:</legend>
             <ul class="attractions__list">
               <li class="attractions__item">
@@ -116,7 +116,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__emotions">
+          <fieldset class="review-form__emotions emotions">
             <legend class="review-form__title">Опишите свои эмоции:</legend>
             <textarea class="emotions__text" cols="20" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
